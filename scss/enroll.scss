@@ -578,512 +578,214 @@ html,body{
 }
 }
 
-//scroll
-#scrolls{
-    width: 100%;
-    height: 44px;
-    background: white;
-   
-    #scro{
-        width: 1200px;
-        height: 44px;
-        margin: 0 auto;
-         display: none;
-        z-index: 99999;
+//second
+#second{
+    width: 1349px;
+    height: 600px;
+    background: url(../img/reg.gif) no-repeat center;
+    position: relative;
+    #secongbox{
+        width: 380px;
+        height: 400px;
         background: white;
-        .scrlogo{
-            float: left;
-            width: 390px;
-            img{
-                width: 80px;
-                height: 36px;
-            }
-        }
-        .scrsoso{
-            float: left;
-            
-            
-            width: 510px;
-            height: 36px;
-            border: 2px solid #163672;
-            position: relative;
-            #scrtxt{
-                width: 440px;
-                height: 21px;
-                vertical-align: bottom;
-                outline: none;
-                border: none;
-                margin: 10px;
-            }
-            #scrbut{
-                width: 50px;
-                height: 36px;
-                background: #163672;
-                border: none;
-                vertical-align: bottom;
-                outline: none;
-                margin-bottom: 6px;
-            }
-            img{
-                position: absolute;
-                top: 10px;
-                right: 12px;
-                cursor: pointer;
-            }
-        
-        }
-    }
-}
-
-//更多
-.newproject{
-    width: 1200px;
-    height: 40px;
-    margin: 0 auto;
-//  background: violet;
-    margin-top: 90px;
-    .pro1{
-        width: 484px;
-        height: 37px;
-        float: left;
-    }
-    .pro2{
-        width: 672px;
-        line-height: 37px;
-        float: left;
-        b{
-                font-size: 25px;
-                font-weight: normal;
-                color: #333;
-        }
-        em{
-                margin: 0 10px;
-                font-size: 18px;
-                color: #33336c;
-        }
-        span{
-            color: #999999;
-        }
-    }
-    .pro3{
-        width: 44px;
-        line-height: 37px;
-        float: left;
-        a{
-            color: #666;
-            display: block;
-             width: 44px;
-        line-height: 37px;
-        }
-      
-    }
-}
-
-//商品
-.shopping{
-    width: 1200px;
-    height: 780px;
-    border: 1px solid #dddddd;
-    margin: 0 auto;
-    .shop{
-        width: 240px;
-        height: 260px;
-        box-sizing: border-box;
-        border-bottom: 1px solid #dddddd;
-        border-right: 1px solid #dddddd;
-        float: left;
-        overflow: hidden;
-        &:hover .shopmap2{
-           transform: translateY(-20px); 
-           transition: all 0.3s linear;
-        }
-        .shopmap1{
-            width: 240px;
-            height: 180px;
-//          background: black;
-            position: relative;
-            .s3{
-                 width: 160px;
-                height: 160px;
-                 position: absolute;
-                top: 10px;
-                left: 40px;
-            }
-            .s3 img{
-                width: 160px;
-                height: 160px;
-                
-            }
-            .x1 img{
-                width: 28px;
-                height: 28px;
-                display: block;
-                position: absolute;
-                top: 0;
-                right: 0;
-            }
-            .x1{
-                width: 28px;
-                height: 28px;
-                 position: absolute;
-                top: 10px;
-                right: 10px;
-            }
-            .x2{
-                width: 28px;
-                height: 28px;
-                 position: absolute;
-                top: 50px;
-                right: 10px;
-            }
-            .x2 img{
-                width: 28px;
-                height: 28px;
-            }
-        }
-        .shopmap2{
-            width: 240px;
-            height: 120px;
-//          background: blue;
-            h3{
-                font-size: 14px;
-                font-weight: 500;
-                color: #555;
-                height: 40px;
-                overflow: hidden;
-                width: 220px;
-                margin-left: 10px;
-            }
-            .princep{
-     
-                font-size: 18px;
-                color: #ed4242;
-                margin: 4px 80px;
-                width: 220px;
-                height: 27px;
-            }
-            .chinaimg{
-                height: 20px;
-                color: #999;
-                font-size: 10px;
-               margin: 0 90px;
-               width: 60px;
-               margin-top: 10px;
-//             float: left;
-            }
-            .chinaimg img{
-                width: 16px;
-                height: 11px;
-                margin-top: 2px;
-                border: 1px solid #ddd;
-                display: block;
-                float: right;
-            }
-                
-            
-        }
-    }
-    .shop1{
-        border-right: none;
-    }
-    .shop2{
-        border-bottom: none;
-    }
-}
-//热卖
-.newbuy{
-    width: 1200px;
-    height: 40px;
-    margin: 0 auto;
-//  background: violet;
-    margin-top: 90px;
-    .buy1{
-        width: 484px;
-        height: 37px;
-        float: left;
-    }
-    .buy2{
-        width: 672px;
-        line-height: 37px;
-        float: left;
-        b{
-                font-size: 25px;
-                font-weight: normal;
-                color: #333;
-        }
-        em{
-                margin: 0 10px;
-                font-size: 18px;
-                color: #33336c;
-        }
-        span{
-            color: #999999;
-        }
-    }
-    .buy3{
-        width: 44px;
-        line-height: 37px;
-        float: left;
-        a{
-            color: #666;
-            display: block;
-             width: 44px;
-        line-height: 37px;
-        }
-      
-    }
-}
-//热卖产品
-.recommend{
-    width: 1200px;
-    height: 720px;
-    margin: 0 auto;
-    border: 1px solid #ddd;
-    .re1{
-        width: 400px;
-        height: 180px;
-        float: left;
-        border-right: 1px solid #ddd;
-        border-bottom: 1px solid #ddd;
-        box-sizing: border-box;
-        .re123{
-            width: 199px;
-            height: 180px;
-            float: left;
-//          background: black;
-            position: relative;
-            .re1231 {
-                position: absolute;
-                top: 40px;
-                left: 40px;
-            }
-             .re1231 img{
-                width: 120px;
-                height: 120px;
-            }
-            .re1233{
-                position: absolute;
-                top: 10px;
-                left: 10px;
-            }
-            .re1233 img{
-                width: 28px;
-                height: 28px;
-            }
-            .re1232{
-                position: absolute;
-                top: 49px;
-                left: 10px
-            }
-            .re1232 img{
-                width: 28px;
-                height: 28px;
-            }
-        }
-        .re456{
-            width: 200px;
-            height: 180px;
-            float: left;
-//          background: blue;
-            h3{
-                width: 186px;
-                height: 40px;
-                font-size: 14px;
-                color: #555;
-                margin-top: 20px;
-            }
-            .princes{
-                font-size: 18px;
-                color: #ed4242;
-                margin-top: 20px;
-                margin-bottom: 10px;
-            }
-            .chinatea{
-                height: 20px;
-                color: #999;
-                font-size: 10px;
-               width: 60px;
-            }
-            .chinatea img{
-                float: right;
-                width: 16px;
-                height: 11px;
-                margin-top: 4px;
-            }
-        }
-    }
-    .re11{
-        border-right: none;
-    }
-    .re12{
-        border-bottom: none;
-    }
-}
-
-//全球购
-.global{
-     width: 1200px;
-    height: 40px;
-    margin: 0 auto;
-    margin-top: 90px;
-//  background: beige;
-    .global1{
-        width: 472px;
-        line-height: 37px;
-        margin-left: 475px;
-        b{
-                font-size: 25px;
-                font-weight: normal;
-                color: #333;
-        }
-        em{
-                margin: 0 10px;
-                font-size: 18px;
-                color: #33336c;
-        }
-        span{
-            color: #999999;
-        }
-    }
-}
-
-//
-.tps{
-    width: 1160px;
-    height: 384px;
-    margin: 0 auto;
-           
-    li{
-        width: 290px;
-        height: 157px;
-        float: left;
-        margin-top: 35px;
-        
-        a{
-            width: 157px;
-            height: 157px;
-            display: block;
-            margin: 0 auto;
-            &:hover {
-           transform: translateY(-20px); 
-           transition: all 0.2s linear;
-        }
-        }
-
-        .tps1{
-                background: url(../img/wrap.png) no-repeat 0 0;
-        }
-        .tps2{
-                background: url(../img/wrap.png) no-repeat -290px 0;
-        }
-        .tps3{
-                background: url(../img/wrap.png) no-repeat -590px 0;
-        }
-        .tps4{
-                background: url(../img/wrap.png) no-repeat -901px 0;
-        }
-         .tps5{
-                background: url(../img/wrap.png) no-repeat 0 bottom;
-        }
-        .tps6{
-                background: url(../img/wrap.png) no-repeat -290px bottom;
-        }
-        .tps7{
-                background: url(../img/wrap.png) no-repeat -590px bottom;
-        }
-        .tps8{
-                background: url(../img/wrap.png) no-repeat -901px bottom;
-        }
-    }
-}
-//食品酒水
-.food{
-    width: 1200px;
-    height: 68px;
-    margin: 0 auto;
-    margin-top: 50px;
-//  background: beige;
-    h2{
-        font-size: 24px;
-        font-weight: 500;
-        margin: 0 auto;
-        margin-left: 46%;
-    }
-    ul{
-        width: 923px;
-        height: 22px;
-      margin-left: 274px;
-      margin-top: 10px;
-        li{
-            float: left;
-            a{
-                color: #333;
-                font-size: 10px;
-                margin: 6px 8px;
-                &:hover{
-                    color: #ee4242;
+        position: absolute;
+        top: 50px;
+        right: 75px;
+        #mailphone{
+            width: 314px;
+            height: 45px;
+            margin-top: 20px;
+                margin-left: 30px;
+            li{
+                float: left;
+                .meils{
+                    
+                    border-bottom: 2px solid #ed4242;
+                    z-index: 999;
+                    box-sizing: border-box;
+                    
+                }
+                .phones{
+                    margin-left: 20px;
+                    border-bottom: 2px solid transparent;
+                    box-sizing: border-box;
+//                  border: none;
+                }
+//              .acc{
+//                  border:none ;
+//              }
+//              .add{
+//                  border-bottom: 2px solid #ed4242;
+//              }
+                a{
+                    color: #999;
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 45px;
+                    text-align: center;
                 }
             }
         }
-        .milk{
-            margin-left: 154px;
+        #mailbox{
+            .textpass{
+                width: 314px;
+                line-height: 40px;
+                margin-left: 30px;
+                margin-top: 20px;
+                border: 1px solid #e5e5e5;
+                box-sizing: border-box;
+                border-radius: 6px;
+                
+                input{
+                    width: 300px;
+                    line-height: 36px;
+                    margin-left: 8px;
+                    border: none;
+                     box-sizing: border-box;
+                    outline: none;
+                }
+                      .redpng{
+                    width: 30px;
+                    height: 30px;
+                    position: absolute;
+                    top: 7px;
+                    right: -31px;
+                    z-index: 99999;
+                    display: inline-block;
+                    display: none;
+                }
+            }
+            .pass1{
+                width: 314px;
+                height: 20px;
+                margin-left: 30px;
+                font-size: 8px;
+                color: #ee4242;
+                display: none;
+            }
+            .textpass1{
+                width: 314px;
+                line-height: 20px;
+                margin-left: 30px;
+                font-size: 10px;
+                margin-top: 6px;
+                
+                input{
+                    vertical-align: middle;
+                }
+            }
+            .textpass2{
+                width: 314px;
+                height: 45px;
+                margin-left: 30px;
+                margin-top: 10px;
+                input{
+                    width: 314px;
+                    height: 45px;
+                    border: none;
+                    background: #ed4242;
+                    border-radius: 10px;
+                    color: white;
+                    font-size: 18px;
+                    outline: none;
+                }
+            }
+            .textpass3{
+                width: 314px;
+                height: 26px;
+                margin-left: 40px;
+                margin-top: 20px;
+                p{
+                    font-size: 10px;
+                }
+            }
         }
-        .more{
-            margin-left: 50px;
-        }
-    }
-}
-
-.water{
-    width: 1200px;
-    height: 350px;
-    margin: 0 auto;
-    border: 1px solid #ddd;
-    border-bottom: none;
-    .water1{
-        float: left;
-        width: 240px;
-        height: 350px;
-        img{
-            width: 240px;
-            height: 175px;
-            
-        }
-        li{
-            width: 120px;
-            line-height: 32px;
-            float: left;
-            text-align: center;
-            a{
-                color: #333;
-                font-size: 12px;
-                &:hover{
-                    color: #ee4242;
+        
+        //
+        #mailbox1{
+            .textpass1{
+                width: 314px;
+                line-height: 40px;
+                margin-left: 30px;
+                margin-top: 20px;
+                border: 1px solid #e5e5e5;
+                box-sizing: border-box;
+                border-radius: 6px;
+                
+                input{
+                    width: 300px;
+                    line-height: 36px;
+                    margin-left: 8px;
+                    border: none;
+                     box-sizing: border-box;
+                    outline: none;
+                }
+                      .redpng1{
+                    width: 30px;
+                    height: 30px;
+                    position: absolute;
+                    top: 7px;
+                    right: -31px;
+                    z-index: 99999;
+                    display: inline-block;
+                    display: none;
+                }
+            }
+            .pass11{
+                width: 314px;
+                height: 20px;
+                margin-left: 30px;
+                font-size: 8px;
+                color: #ee4242;
+                display: none;
+            }
+            .textpass11{
+                width: 314px;
+                line-height: 20px;
+                margin-left: 30px;
+                font-size: 10px;
+                margin-top: 6px;
+                
+                input{
+                    vertical-align: middle;
+                }
+            }
+            .textpass21{
+                width: 314px;
+                height: 45px;
+                margin-left: 30px;
+                margin-top: 10px;
+                input{
+                    width: 314px;
+                    height: 45px;
+                    border: none;
+                    background: #ed4242;
+                    border-radius: 10px;
+                    color: white;
+                    font-size: 18px;
+                    outline: none;
+                }
+            }
+            .textpass31{
+                width: 314px;
+                height: 26px;
+                margin-left: 40px;
+                margin-top: 20px;
+                p{
+                    font-size: 10px;
                 }
             }
         }
     }
-    .water2{
-        float: left;
-        width: 720px;
-        height: 350px;
-        box-sizing: border-box;
-        border-right: 1px solid #ddd;
-        border-left: 1px solid #ddd;
-    }
-    .water3{
-        float: left;
-        width: 240px;
-        height: 350px;
-    }
 }
+
 
 //footer
 .footers{
     width: 100%;
     height: 238px;
     background: #eee;
-    margin-top: 40px;
+    
     .footer{
     width: 1200px;
     height: 238px;
@@ -1173,4 +875,3 @@ html,body{
         }
     }
 }
-
