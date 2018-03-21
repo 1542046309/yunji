@@ -1,7 +1,7 @@
 @import 'common.scss';
-html,body{
-    height: 10000px;
-}
+//html,body{
+//  height: 10000px;
+//}
 #head{
         
        background: url(../img/1.jpg) no-repeat center;
@@ -848,12 +848,12 @@ html,body{
 }
 .appraise{
     width: 1200px;
-    height: 3000px;
+    height: 1835px;
     margin: 0 auto;
     .appraise1{
         float: left;
         width: 180px;
-        height: 3000px;
+        height: 1835px;
         margin-right: 10px;
         
         h3{
@@ -888,17 +888,18 @@ html,body{
      .appraise2{
         float: left;
         width: 800px;
-        height: 3000px;
+        height: 1835px;
         margin-right: 10px;
         .app3{
             width: 800px;
             height: 900px;
+            vertical-align: bottom;
         }
     }
      .appraise3{
         float: left;
         width: 200px;
-        height: 3000px;
+        height: 1835px;
         h3{
             width: 170px;
             height: 43px;
@@ -908,6 +909,150 @@ html,body{
             font-size: 14px;
             border-bottom: 1px solid #ddd;
         }
-        
+        .app4{
+            width: 190px;
+            height: 284px;
+            .app5{
+                width: 190px;
+                height: 234px;
+                .app55{
+                    width: 190px;
+                    height: 190px;
+                    margin-top: 20px;
+                }
+            }
+            .app6{
+                width: 180px;
+                height: 24px;
+                p{
+                    color: #333;
+                    font-size: 12px;
+                    width: 127px;
+//                  height: 18px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    float: left;
+                }
+                .app66{
+                    width: 18px;
+                    height: 13px;
+                    float: left;
+                    margin-left: 35px;
+                }
+            }
+            .app7{
+                width: 180px;
+                height: 24px;
+                p{
+                   width: 180px;
+                    height: 24px;
+                    font-size: 12px;
+                    color: #ee4242;
+                    span{
+                        font-size: 12px;
+                        color: #bbbbbb;
+                        margin-left: 109px;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+//footer
+.footers{
+    width: 100%;
+    height: 238px;
+    background: #eee;
+    
+    .footer{
+    width: 1200px;
+    height: 238px;
+    margin: 0 auto;
+        .footer1{
+            float: left;
+            width: 630px;
+            height: 238px;
+//          background: skyblue;
+            .website{
+                color: #333;
+                font-size: 12px;
+                height: 36px;
+                width: 630px;
+                display: block;
+                margin-top: 20px;
+               
+            }
+            .tubiao img{
+                width: 128px;
+                height: 47px;
+                margin-bottom: 20px;
+            }
+            .number{
+                p{
+                    font-size: 12px;
+                    color: #999;
+                    margin-top: 3px;
+                    a{
+                        color: #333;
+                    }
+                    
+                }
+                .ico_beian{
+                    position: relative;
+                    img{
+                    position: absolute;
+                    top: 4px;
+                    left: 0;
+                    width: 20px;
+                    height: 20px;
+                    
+                    }
+                    a{
+                        position: absolute;
+                    top: 6px;
+                    left: 25px;
+                    }
+                }
+                
+            }
+        }
+        .footer2{
+            float: left;
+            width: 410px;
+            height: 238px;
+//          background: violet;
+            li{
+                font-size: 12px;
+                color: #999;
+                margin-top: 20px;
+            }
+        }
+        .footer3{
+            float: left;
+            width: 160px;
+            height: 238px;
+            background: #e65050;
+            .footerapp{
+                width: 160px;
+                height: 198px;
+                margin-top: 30px;
+                
+                img{
+                    width: 114px;
+                    height: 114px;
+                    margin: 0 auto;
+                    display: block;
+                }
+                p{
+                    font-size: 12px;
+                    color: white;
+                    text-align: center;
+                    margin-top: 20px;
+                }
+            }
+        }
     }
 }

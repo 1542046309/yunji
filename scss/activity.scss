@@ -1,6 +1,6 @@
 @import 'common.scss';
 html,body{
-//  height: 10000px;
+    height: 10000px;
 }
 #head{
         
@@ -579,206 +579,18 @@ html,body{
 }
 
 //second
-#second{
+.ab{
     width: 1349px;
-    height: 600px;
-    background: url(../img/reg.gif) no-repeat center;
-    position: relative;
-    #secongbox{
-        width: 380px;
-        height: 440px;
-        background: white;
-        position: absolute;
-        top: 50px;
-        right: 75px;
-        #mailphone{
-            width: 314px;
-            height: 45px;
-            margin-top: 20px;
-                margin-left: 30px;
-            li{
-                float: left;
-                .meils{
-                    
-                    border-bottom: 2px solid #ed4242;
-                    z-index: 999;
-                    box-sizing: border-box;
-                    
-                }
-                .phones{
-                    margin-left: 20px;
-                    border-bottom: 2px solid transparent;
-                    box-sizing: border-box;
-//                  border: none;
-                }
-//              .acc{
-//                  border:none ;
-//              }
-//              .add{
-//                  border-bottom: 2px solid #ed4242;
-//              }
-                a{
-                    color: #999;
-                    font-size: 18px;
-                    font-weight: 700;
-                    line-height: 45px;
-                    text-align: center;
-                }
-            }
-        }
-        #mailbox{
-            .textpass{
-                width: 314px;
-                line-height: 40px;
-                margin-left: 30px;
-                margin-top: 20px;
-                border: 1px solid #e5e5e5;
-                box-sizing: border-box;
-                border-radius: 6px;
-                
-                input{
-                    width: 300px;
-                    line-height: 36px;
-                    margin-left: 8px;
-                    border: none;
-                     box-sizing: border-box;
-                    outline: none;
-                }
-                      .redpng{
-                    width: 30px;
-                    height: 30px;
-                    position: absolute;
-                    top: 7px;
-                    right: -31px;
-                    z-index: 99999;
-                    display: inline-block;
-                    display: none;
-                }
-            }
-            .pass1{
-                width: 314px;
-                height: 20px;
-                margin-left: 30px;
-                font-size: 8px;
-                color: #ee4242;
-                display: none;
-            }
-            .textpass1{
-                width: 314px;
-                line-height: 20px;
-                margin-left: 30px;
-                font-size: 10px;
-                margin-top: 6px;
-                
-                input{
-                    vertical-align: middle;
-                }
-            }
-            .textpass2{
-                width: 314px;
-                height: 45px;
-                margin-left: 30px;
-                margin-top: 10px;
-                input{
-                    width: 314px;
-                    height: 45px;
-                    border: none;
-                    background: #ed4242;
-                    border-radius: 10px;
-                    color: white;
-                    font-size: 18px;
-                    outline: none;
-                }
-            }
-            .textpass3{
-                width: 314px;
-                height: 26px;
-                margin-left: 40px;
-                margin-top: 20px;
-                p{
-                    font-size: 10px;
-                }
-            }
-        }
-        
-        //
-        #mailbox1{
-            .textpass1{
-                width: 314px;
-                line-height: 40px;
-                margin-left: 30px;
-                margin-top: 20px;
-                border: 1px solid #e5e5e5;
-                box-sizing: border-box;
-                border-radius: 6px;
-                
-                input{
-                    width: 300px;
-                    line-height: 36px;
-                    margin-left: 8px;
-                    border: none;
-                     box-sizing: border-box;
-                    outline: none;
-                }
-                      .redpng1{
-                    width: 30px;
-                    height: 30px;
-                    position: absolute;
-                    top: 7px;
-                    right: -31px;
-                    z-index: 99999;
-                    display: inline-block;
-                    display: none;
-                }
-            }
-            .pass11{
-                width: 314px;
-                height: 20px;
-                margin-left: 30px;
-                font-size: 8px;
-                color: #ee4242;
-                display: none;
-            }
-            .textpass11{
-                width: 314px;
-                line-height: 20px;
-                margin-left: 30px;
-                font-size: 10px;
-                margin-top: 6px;
-                
-                input{
-                    vertical-align: middle;
-                }
-            }
-            .textpass21{
-                width: 314px;
-                height: 45px;
-                margin-left: 30px;
-                margin-top: 10px;
-                input{
-                    width: 314px;
-                    height: 45px;
-                    border: none;
-                    background: #ed4242;
-                    border-radius: 10px;
-                    color: white;
-                    font-size: 18px;
-                    outline: none;
-                }
-            }
-            .textpass31{
-                width: 314px;
-                height: 26px;
-                margin-left: 40px;
-                margin-top: 20px;
-                p{
-                    font-size: 10px;
-                }
-            }
-        }
-    }
+    height: 450px;
+    background: url(../img/ab.jpg) no-repeat center;
+    cursor: pointer;
 }
-
+.classify{
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    background: black;
+}
 
 //footer
 .footers{

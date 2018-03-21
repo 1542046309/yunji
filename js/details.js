@@ -58,3 +58,27 @@ window.onload = function () {
         oLargeBox.style.display = 'none';
     });
 };
+
+
+
+$(function(){	
+
+		$(".letter1").bind("click",function () {
+    			$('.app9').show();
+    			$('.app3').hide();
+    			$('.letter1').css('color','#e75050');
+    			$('.letters').css('color','#424242');
+		});
+
+		
+
+		$(".letters").click(function(){
+			$('.app9').hide();
+			$('.app3').show();
+			$('.letter1').css('color','#424242');
+    		$('.letters').css('color','#e75050');
+    		
+		})
+		
+
+	});

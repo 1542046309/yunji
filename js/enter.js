@@ -172,3 +172,18 @@ $(document).ready(function(){
 		});
 
 	});
+	$(function(){
+		var passq = false;
+    $("#phonee").blur(function(){
+        phonepass2();
+    })
+    function phonepass2(){
+        var regPhone2 = /^[\w]{6,20}$/;  //6-20位
+        if (!regPhone2.test($("#phonee").val())) {
+            $(".dds").html("密码格式不正确")
+        }else{
+            passq = true;
+            $(".dds").css()
+        }
+    }
+	})
