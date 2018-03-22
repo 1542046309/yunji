@@ -4,6 +4,7 @@ $(function(){
 	})
 });
 
+
 	$(document).ready(function(){	
 
 		$(".someone").bind("mouseenter",function () {
@@ -174,16 +175,3 @@ $(document).ready(function(){
 	});
 	
 
-window.onscroll = function(){
-		var yyy = document.getElementById("scro");
-		var _scroll = document.body.scrollTop || document.documentElement.scrollTop;
-		document.title = _scroll;
-		if(_scroll >= 800){
-			yyy.style.display = "block";
-			yyy.style.position = "fixed";
-			yyy.style.top = 0;
-			yyy.style.left = "75px";
-		} else {
-			yyy.style.display = "none";
-		}
-	};

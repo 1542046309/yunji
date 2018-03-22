@@ -34,20 +34,20 @@
 				</div>
 			</div>
 			<div id="head-right">
-				<a href="javascript" class="somethree"><img src="img/4.png"/>下载手机TPS</a>
-				<a href="javascript" class="deng">登录</a>
-				<a href="javascript">|</a>
-				<a href="javascript" class="deng">注册</a>
-				<a href="javascript" class="somesix">我的关注(0)</a>
-				<a href="javascript" class="somefour" >个人中心<i class="iconfont icon-jiantou1"></i></a>
-				<a href="javascript" class="somefive">帮助中心<i class="iconfont icon-jiantou1"></i></a>
+				<a href="javascript:;" class="somethree"><img src="img/4.png"/>下载手机TPS</a>
+				<a href="enter.html" class="deng">登录</a>
+				<a href="javascript:;">|</a>
+				<a href="enroll.html" class="deng">注册</a>
+				<a href="javascript:;" class="somesix">我的关注(0)</a>
+				<a href="javascript:;" class="somefour" >个人中心<i class="iconfont icon-jiantou1"></i></a>
+				<a href="javascript:;" class="somefive">帮助中心<i class="iconfont icon-jiantou1"></i></a>
 				<div class="fourhide">
 				
-						<a href="javascript" >我的订单</a>
+						<a href="javascript:;" >我的订单</a>
 				</div>
 				<div class="fivehide">
 				
-						<a href="javascript" >我的工单</a>
+						<a href="javascript:;" >我的工单</a>
 				</div>
 				<div class="threehide">
 				
@@ -96,7 +96,7 @@
 					<li class="mu shang"><a href="javascript:;" class="shang1">母婴用品</a>
 						<div class="lie1" style="background: white;">
 							<ul class="lieul" >
-								<li><a href="javascript:;" class="lie2 naifen">婴幼儿奶粉</a></li>
+								<li><a href="list.html" class="lie2 naifen">婴幼儿奶粉</a></li>
 								<li><a href="javascript:;" class="lie2 duan" >1段</a></li>
 								<li><a href="javascript:;" class="lie2 duan">|</a></li>
 								<li><a href="javascript:;" class="lie2 duan">2段</a></li>
@@ -379,12 +379,12 @@
 	<div class="shoppingmore">
 		<h3>全部商品</h3><p>1</p>
 	</div>
-	<div class="close" style="margin-bottom: 186px;">
+	<div class="close" style="margin-bottom: 186px;" id="list">
 		<div class="closetop">
 			<ul>
 				<li class="closetop1">
 					<form action="">
-						<input type="checkbox" name="" id=""  />
+						<input type="checkbox" name="" id="checkedAllId"  />
 					<a href="javascript:;">&nbsp;全选</a>
 					</form>
 				</li>
@@ -409,26 +409,26 @@
 						<p>行游天下自由行旅游护照5年<br />珍藏版旅游年票<br />商品编码: 547405614-1</p><span>此商品在中国有售</span>
 					</li>
 					<li class="piao4">
-						<a href="javascript:;">￥288.46</a>
+						<a href="javascript:;" id="danjia">288</a>
 					</li>
 					<li class="piao5">
-						<span class="piao51">-</span>
-						<input type="text" id="" value="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1" />
-						<span class="piao52">+</span>
+						<span class="piao51 n1" >-</span>
+						<input type="text" id="nn" value="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1" />
+						<span class="piao52 n2" >+</span>
 					</li>
 					<li class="piao6">
-						<a href="javascript:;">￥288.46</a>
+						<a href="javascript:;" >￥288.46</a>
 					</li>
 					<li class="piao7">
-						<a href="javascript:;"><img src="img/delete.png"/></a>
+						<a href="javascript:;" id="dele"><img src="img/delete.png"/></a>
 					</li>
 				</form>
 			</ul>
 		</div>
 		
-		<div class="pitch">
+		<div class="pitch" id="btnUnCheckId">
 			<form action="">
-				<input type="checkbox" /><span>全选</span>
+				<input type="checkbox" /><span>反选</span>
 				
 			</form>
 			<a href="javascript:;">删除选中的商品</a>
@@ -437,7 +437,7 @@
 		<div class="house">
 			<div class="house1">
 				<p>共 1 件商品 总价（不含运费）：</p>
-				<span>￥288.46</span>
+				<span id="zongjia">0.00</span>
 				<a href="javascript:;">立即结算</a>
 			</div>
 		</div>

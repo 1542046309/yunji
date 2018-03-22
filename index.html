@@ -7,6 +7,7 @@
 	<title>首页</title>
 	<link rel="stylesheet" type="text/css" href="css/index.css"/>
 	<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+	<link rel="stylesheet" type="text/css" href="css/carousel.css"/>
 
 </head>
 <body>
@@ -377,32 +378,25 @@
 	</div>
 	<!--轮播图-->
 	<div id="slideshow" >
-<!--       
-			<img id="imgI1" src="img/t1.jpg" />
-			<img id="imgI2" src="img/t2.jpg" />
-			<img id="imgI3" src="img/t3.jpg" />
-			<img id="imgI5"  src="img/t4.jpg" />
-			<img id="imgI6"  src="img/t5.jpg" />
-			<img id="imgI7"  src="img/t6.jpg" />
-			<img id="imgI8"  src="img/t7.jpg" />
-			<img id="imgI9"  src="img/t8.jpg" />
-			<img id="imgI10" src="img/t9.jpg" />
-			<img id="imgI11" src="img/t10.jpg" />
-			<ul id="btns1">
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
-			<div id="leftArrow1" style="font-size:60px;">＜</div>
-			<div id="rightArrow1" style="font-size:60px;">＞</div>-->
-    
+
+    	<div class="carousel" id="carousel1">
+		<ul class="carousel-list">
+			<li><img src="img/t1.jpg"></li>
+			<li><img src="img/t2.jpg"></li>
+			<li><img src="img/t3.jpg"></li>
+			<li><img src="img/t4.jpg"></li>
+		</ul>
+		<div class="direction-btn">
+			<a href="javascript:;" class="prev"><</a>
+			<a href="javascript:;" class="next">></a>
+		</div>
+		<div class="dots">
+			<a href="javascript:;" class="active"></a>
+			<a href="javascript:;"></a>
+			<a href="javascript:;"></a>
+			<a href="javascript:;"></a>
+		</div>
+	</div>
     </div>
     
     <div id="scrolls">
@@ -1077,7 +1071,7 @@
     </div>
     <!--彩妆-->
     <!--美妆个护--><!--美妆个护--><!--美妆个护--><!--美妆个护-->
-    <div class="food" >	
+    <!--<div class="food" >	
     	<h2>美妆个护</h2>
     	<ul>
 		<li><a href="javascript:;" class="milk">洁面</a></li>
@@ -1159,12 +1153,12 @@
     				<a href="javascript:;"></a>
     				<a href="javascript:;"></a>
     			</li>-->
-    		</ul>
+    		<!--</ul>
     	</div>
     </div>
 
     <!--商品-->
-    <div class="shopping">
+    <!--<div class="shopping">
     	<div class="shop">
     		<div class="shopmap1">
     			<a href="javascript:;" class="s3"><img src="img/ccc.jpg"/></a>
@@ -1345,7 +1339,7 @@
     			<p class="chinaimg">中国<img src="img/x3.jpg"  /></p>
     		</div>
     	</div>
-    </div>
+    </div>-->
     <!--footer-->
     <div class="footers">
 	    <div class="footer">
@@ -1384,44 +1378,35 @@
 </body>
 </html>
 
+
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-<script type="text/javascript" src="js/Slider03.js"></script>
+<script type="text/javascript" src="js/carousel.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 <script type="text/javascript">
-
-$(function(){
-	$("#slideshow").slider(
-					{
-						
-						$boxDom : $("#slideshow"),
-						width : 1349,
-						height : 450,
-						//播放的图片数组（图片的地址）
-						imgs : ["img/t1.jpg","img/t2.jpg","img/t3.jpg","img/t4.jpg","img/t5.jpg","img/t6.jpg","img/t7.jpg","img/t8.jpg","img/t9.jpg","img/t10.jpg"],
-						//当前播放的图片的序号
-						currOrd : 8,
-						//时间间隔
-						timeSpace : 5000,
-						//按钮
-						//按钮的颜色
-						btn : {
-							//按钮的大小
-							width:16,
-							height:16,
-							color:"white",//按钮的原始颜色
-
-							highColor:"black",//按钮的高亮颜色
-							//按钮的位置（）
-							right:500,
-							bottom:-130,
-							isCircle:true
-						}
-					}
-);
-});
+	
+	
+	window.onscroll = function(){
+		var yyy = document.getElementById("scro");
+		var _scroll = document.body.scrollTop || document.documentElement.scrollTop;
+		document.title = _scroll;
+		if(_scroll >= 800){
+			yyy.style.display = "block";
+			yyy.style.position = "fixed";
+			yyy.style.top = 0;
+			yyy.style.left = "75px";
+		} else {
+			yyy.style.display = "none";
+		}
+	};
+	//轮播图一
+new Carousel({
+			el: $('#carousel1')[0],
+			timeout: 5000
+		});
 
 
-
+//轮播图二
 var arr=["mi1.jpg","mi2.jpg","mi3.jpg","mi4.jpg"];
 var ord=0;//的代表对当前 图片的序号，从0开始
 var myTimer=null;
